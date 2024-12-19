@@ -3,15 +3,60 @@ import streamlit as st
 
 
 # Page Config
-st.set_page_config(page_title='全國大專院校 ESG暨Big Data數據應用大賽',  layout='wide')
+st.set_page_config(page_title='全國大專院校 ESG暨Big Data數據應用大賽')
 
 
-# Title
-st.title("_全國大專院校 ESG暨Big Data數據應用大賽_")
+
+# st.image('./banner.jpg')
+# Define custom CSS
+background_image_css = """
+<style>
+.title-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 300px; /* Set height of the container */
+    overflow: hidden; /* Ensures image does not overflow */
+}
+.title-container h1 {
+    position: relative;
+    z-index: 2;
+    margin: 0; /* Ensure no extra space around the title */
+    line-height: 300px; /* Vertically align text */
+}
+.title-container::before {
+    content: '';
+    background: url('https://github.com/DevRu-Test/Demo_Website/blob/master/banner.jpg?raw=true') no-repeat center center;
+    background-size: 100% auto; /* Set width to 100% and adjust height automatically */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Match the container width */
+    height: 100%; /* Match the container height */
+    z-index: 1;
+    opacity: 1; /* Adjust transparency */
+}
+</style>
+<div class="title-container">
+    <h1></h1>
+</div>
+"""
+
+
+
+# Render the custom HTML
+st.markdown(background_image_css, unsafe_allow_html=True)
+
+
+
+# # Title
+# st.title("_全國大專院校 ESG暨Big Data數據應用大賽_")
+
 
 
 # Partition
 tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs(["活動宗旨", "活動對象", "競賽類別", "評分標準", "參賽獎勵", '競賽資訊'])
+
 
 
 # Content
@@ -22,7 +67,7 @@ with tab1:
     sentence_2 = "本次ESG暨Big Data數據應用大賽，旨在引導學生以商業創新角度探索並實踐專題成果，結合核心素養與課程所學，在創新產品設計、商業模式構思及活動改善中展現學習成效，提升學生在實務與專業領域的競爭力。"
     input_a2.header("活動宗旨：")
     input_a2.write(sentence_1)
-    input_a2.write(sentence_2)
+    input_a2.write(sentence_2)   
 with tab2:
     container2 = st.container()
     input_b1, input_b2, input_b3 = container2.columns((1, 3, 1))
@@ -133,8 +178,5 @@ with tab6:
     input_f2.subheader("主辦單位：")
     input_f2.write(sentence_6)
     input_f2.image('./協會logo.jpg')
-
-
-
 
 

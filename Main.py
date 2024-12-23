@@ -178,5 +178,6 @@ with tab6:
     input_f2.subheader("主辦單位：")
     input_f2.write(sentence_6)
     input_f2.image('./協會logo.jpg')
+    input_f2.image('./龍華logo.png')
 
 

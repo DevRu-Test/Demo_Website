@@ -188,7 +188,7 @@ with tab7:
     input_g2.subheader("A.ESG綠色管理組：")
     sentence_1 = "第一名"
     sentence_2 = "作品名稱：永續發展目標視角下國軍官兵的行為機制：探討感知威脅嚴重性、害怕與國軍社會責任知覺對報喜不報憂的影響"
-    sentence_3 = "參賽同學：張同學、葉同學、吳同學"
+    sentence_3 = "參賽同學：張同學、葉同學、吳同學、王同學"
     sentence_4 = "指導老師：張副教授"
     input_g2.write(sentence_1)
     input_g2.write(sentence_2)
@@ -204,7 +204,7 @@ with tab7:
     input_g2.write(sentence_4)
     sentence_1 = "第三名"
     sentence_2 = "作品名稱：台灣綠色包裝策略"
-    sentence_3 = "參賽同學：謝同學、金同學、周同學、顏同學"
+    sentence_3 = "參賽同學：謝同學、金同學、周同學"
     sentence_4 = "指導老師：黃副教授"
     input_g2.write(sentence_1)
     input_g2.write(sentence_2)
@@ -280,13 +280,11 @@ with tab7:
     sentence_1 = "第三名"
     sentence_2 = "作品名稱：大數據應用模式"
     sentence_3 = "參賽同學：陳同學、裴同學"
-    sentence_4 = "參賽學校：龍華科技大學"
-    sentence_5 = "指導老師：張副教授"
+    sentence_4 = "指導老師：張副教授"
     input_g2.write(sentence_1)
     input_g2.write(sentence_2)
     input_g2.write(sentence_3)
     input_g2.write(sentence_4)
-    input_g2.write(sentence_5)
     input_g2.divider()
     sentence_1 = "謹此恭賀上述獲獎團隊，為遵循《個人資料保護法》之相關規範，並確保得獎者之個人隱私權益，本次公告僅揭示獲獎者之姓氏及職稱，敬請理解與支持。"
     input_g2.caption(sentence_1)

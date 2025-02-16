@@ -55,7 +55,7 @@ st.markdown(background_image_css, unsafe_allow_html=True)
 
 
 # Partition
-tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs(["活動宗旨", "活動對象", "競賽類別", "評分標準", "參賽獎勵", '競賽資訊'])
+tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs(["活動宗旨", "活動對象", "競賽類別", "評分標準", "參賽獎勵", '競賽資訊', '得獎公告'])
 
 
 
@@ -179,5 +179,114 @@ with tab6:
     input_f2.write(sentence_6)
     input_f2.image('./協會logo.jpg')
     input_f2.image('./龍華logo.png')
-
-
+with tab7:
+    container7 = st.container()
+    input_g1, input_g2, input_g3 = container7.columns((1, 3, 1))
+    input_g2.header("得獎公告：")
+    sentence_1 = "本次全國競賽，台北市、新北市、桃園市、台南市、高雄市共計五縣市大專院校25隊, 共計51位同學報名參加。"
+    input_g2.write(sentence_1)
+    input_g2.subheader("A.ESG綠色管理組：")
+    sentence_1 = "第一名"
+    sentence_2 = "作品名稱：永續發展目標視角下國軍官兵的行為機制：探討感知威脅嚴重性、害怕與國軍社會責任知覺對報喜不報憂的影響"
+    sentence_3 = "參賽同學：張同學、葉同學、吳同學"
+    sentence_4 = "指導老師：張副教授"
+    input_g2.write(sentence_1)
+    input_g2.write(sentence_2)
+    input_g2.write(sentence_3)
+    input_g2.write(sentence_4)
+    sentence_1 = "第二名"
+    sentence_2 = "作品名稱：分配公平、社會責任與助人行為：軍校生活管理的實證分析"
+    sentence_3 = "參賽同學：黃同學、羅同學、劉同學、顏同學"
+    sentence_4 = "指導老師：洪助理教授、黃講師、陳講師"
+    input_g2.write(sentence_1)
+    input_g2.write(sentence_2)
+    input_g2.write(sentence_3)
+    input_g2.write(sentence_4)
+    sentence_1 = "第三名"
+    sentence_2 = "作品名稱：台灣綠色包裝策略"
+    sentence_3 = "參賽同學：謝同學、金同學、周同學、顏同學"
+    sentence_4 = "指導老師：黃副教授"
+    input_g2.write(sentence_1)
+    input_g2.write(sentence_2)
+    input_g2.write(sentence_3)
+    input_g2.write(sentence_4)
+    input_g2.subheader("B.ESG投資計畫應用組：")
+    sentence_1 = "第一名"
+    sentence_2 = "作品名稱：綠色科技投資計畫"
+    sentence_3 = "參賽同學：許同學、劉同學"
+    sentence_4 = "指導老師：劉副教授"
+    input_g2.write(sentence_1)
+    input_g2.write(sentence_2)
+    input_g2.write(sentence_3)
+    input_g2.write(sentence_4)
+    sentence_1 = "第二名"
+    sentence_2 = "作品名稱：台積電、盛群投資計畫"
+    sentence_3 = "參賽同學：陳同學、洪同學"
+    sentence_4 = "指導老師：謝助理教授"
+    input_g2.write(sentence_1)
+    input_g2.write(sentence_2)
+    input_g2.write(sentence_3)
+    input_g2.write(sentence_4)
+    sentence_1 = "第三名"
+    sentence_2 = "作品名稱：光電投資計畫"
+    sentence_3 = "參賽同學：邱同學、宋同學"
+    sentence_4 = "指導老師：凌副教授"
+    input_g2.write(sentence_1)
+    input_g2.write(sentence_2)
+    input_g2.write(sentence_3)
+    input_g2.write(sentence_4)
+    input_g2.subheader("C.金融科技應用組：")
+    sentence_1 = "第一名"
+    sentence_2 = "作品名稱：雲端運算的運用"
+    sentence_3 = "參賽同學：倪同學、程同學"
+    sentence_4 = "指導老師：謝助理教授"
+    input_g2.write(sentence_1)
+    input_g2.write(sentence_2)
+    input_g2.write(sentence_3)
+    input_g2.write(sentence_4)
+    sentence_1 = "第二名"
+    sentence_2 = "作品名稱：台灣綠色ETF投資行為"
+    sentence_3 = "參賽同學：黃同學、陳同學、林同學"
+    sentence_4 = "指導老師：黃副教授"
+    input_g2.write(sentence_1)
+    input_g2.write(sentence_2)
+    input_g2.write(sentence_3)
+    input_g2.write(sentence_4)
+    sentence_1 = "第三名"
+    sentence_2 = "作品名稱：車聯網的應用"
+    sentence_3 = "參賽同學：林同學、李同學"
+    sentence_4 = "指導老師：謝助理教授"
+    input_g2.write(sentence_1)
+    input_g2.write(sentence_2)
+    input_g2.write(sentence_3)
+    input_g2.write(sentence_4)
+    input_g2.subheader("D.大數據創意專題企劃組：")
+    sentence_1 = "第一名"
+    sentence_2 = "作品名稱：大數據商業模式"
+    sentence_3 = "參賽同學：劉同學、許同學"
+    sentence_4 = "指導老師：謝助理教授"
+    input_g2.write(sentence_1)
+    input_g2.write(sentence_2)
+    input_g2.write(sentence_3)
+    input_g2.write(sentence_4)
+    sentence_1 = "第二名"
+    sentence_2 = "作品名稱：準備三年後畢旅基金"
+    sentence_3 = "參賽同學：陳同學、王同學"
+    sentence_4 = "指導老師：劉副教授"
+    input_g2.write(sentence_1)
+    input_g2.write(sentence_2)
+    input_g2.write(sentence_3)
+    input_g2.write(sentence_4)
+    sentence_1 = "第三名"
+    sentence_2 = "作品名稱：大數據應用模式"
+    sentence_3 = "參賽同學：陳同學、裴同學"
+    sentence_4 = "參賽學校：龍華科技大學"
+    sentence_5 = "指導老師：張副教授"
+    input_g2.write(sentence_1)
+    input_g2.write(sentence_2)
+    input_g2.write(sentence_3)
+    input_g2.write(sentence_4)
+    input_g2.write(sentence_5)
+    input_g2.divider()
+    sentence_1 = "謹此恭賀上述獲獎團隊，為遵循《個人資料保護法》之相關規範，並確保得獎者之個人隱私權益，本次公告僅揭示獲獎者之姓氏及職稱，敬請理解與支持。"
+    input_g2.caption(sentence_1)
